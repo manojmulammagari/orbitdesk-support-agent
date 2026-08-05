@@ -1,6 +1,6 @@
 # OrbitDesk Support Agent
 
-This project is my submission for the AI Engineer Internship assignment.
+This project is my submission for my Internship assignment.
 
 The goal of this project is to build a local AI support agent that can answer questions about OrbitDesk (a fictional workspace product). The complete project runs locally after downloading the required models, so there is no need for OpenAI or any other paid API.
 
