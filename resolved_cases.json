@@ -1,0 +1,45 @@
+[
+  {
+    "case_id": "CASE-001",
+    "question": "Scheduled exports stopped after timezone change",
+    "resolution": "Resave the schedule after timezone change per KB-003. Open schedule, review next-run time, click Save schedule. Also check KB-004 for missed export troubleshooting.",
+    "status": "resolved",
+    "superseded": false,
+    "source_docs": [
+      "KB-003",
+      "KB-004"
+    ]
+  },
+  {
+    "case_id": "CASE-002",
+    "question": "Viewer cannot create API credentials",
+    "resolution": "Viewers do not have permission to create API credentials. Only Owners and Admins can create credentials per KB-002 and KB-005.",
+    "status": "resolved",
+    "superseded": false,
+    "source_docs": [
+      "KB-002",
+      "KB-005"
+    ]
+  },
+  {
+    "case_id": "CASE-003",
+    "question": "Connection keeps showing reauthorization_required",
+    "resolution": "Owner or Admin must reconnect the data source. If repeated connector_internal_error occurs, escalate after two failed attempts with connection ID and timestamps per KB-008.",
+    "status": "resolved",
+    "superseded": false,
+    "source_docs": [
+      "KB-006",
+      "KB-008"
+    ]
+  },
+  {
+    "case_id": "CASE-004",
+    "question": "Legacy personal API tokens not working",
+    "resolution": "Legacy personal API tokens were removed in OrbitDesk 4.0. Use workspace credentials created by Owner or Admin instead. KB-005.",
+    "status": "resolved",
+    "superseded": true,
+    "source_docs": [
+      "KB-005"
+    ]
+  }
+]

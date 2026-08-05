@@ -1,0 +1,96 @@
+[
+  {
+    "question": "Can a read-only user create API credentials?",
+    "output": {
+      "classification": "escalation",
+      "answer": "I apologize, but I cannot generate a fully verified answer based on the available documentation. Please escalate this to human support with the relevant object IDs, error codes, and timestamps. Refer to KB-008 for the escalation checklist.",
+      "sources": [
+        {
+          "document": "KB-005",
+          "passage": "Creating a Credential"
+        },
+        {
+          "document": "KB-002",
+          "passage": "Permission Failures"
+        },
+        {
+          "document": "CASE-002",
+          "passage": "Viewer cannot create API credentials"
+        }
+      ],
+      "confidence": 0.5,
+      "requires_human": true,
+      "reason": "Classified as escalation. Verification issues: No source references like [KB-XXX] found in answer."
+    }
+  },
+  {
+    "question": "My scheduled exports stopped after I changed my workspace timezone. What should I check?",
+    "output": {
+      "classification": "answerable",
+      "answer": "- Confirm the schedule state and next-run time.\n- If the workspace timezone recently changed, follow [KB-003] and resave the schedule.\n- Open **Schedule > Run history** and note the latest run status and error code.\n- Confirm that the dashboard exists and that the schedule owner can still open it.\n- Confirm that all required connections are active.\n- Confirm that the destination is verified and enabled.",
+      "sources": [
+        {
+          "document": "CASE-001",
+          "passage": "Scheduled exports stopped after timezone change"
+        },
+        {
+          "document": "KB-004",
+          "passage": "Troubleshooting a Missed Export"
+        },
+        {
+          "document": "KB-003",
+          "passage": "Changing the Timezone"
+        }
+      ],
+      "confidence": 0.85,
+      "requires_human": false,
+      "reason": "Classified as answerable. Verification passed."
+    }
+  },
+  {
+    "question": "The suggested solution did not work. What information should I collect before escalating?",
+    "output": {
+      "classification": "escalation",
+      "answer": "- Documented checks: Ensure that the user has documented checks to ensure that the issue is not a known issue.\n- Diagnostic information: Collect diagnostic information to identify the root cause of the issue.",
+      "sources": [
+        {
+          "document": "KB-008",
+          "passage": "Escalation Conditions"
+        },
+        {
+          "document": "KB-010",
+          "passage": "Evidence"
+        },
+        {
+          "document": "KB-008",
+          "passage": "---"
+        }
+      ],
+      "confidence": 0.85,
+      "requires_human": true,
+      "reason": "Classified as escalation. Verification passed."
+    }
+  },
+  {
+    "question": "Write a refund for my subscription.",
+    "output": {
+      "classification": "out_of_scope",
+      "answer": "This request is outside the scope of OrbitDesk support. I can only assist with questions about OrbitDesk features, troubleshooting, and usage. For billing, refunds, or legal matters, please contact the appropriate team directly.",
+      "sources": [],
+      "confidence": 0.85,
+      "requires_human": true,
+      "reason": "Classified as out_of_scope. Verification passed."
+    }
+  },
+  {
+    "question": "It's not working",
+    "output": {
+      "classification": "clarification",
+      "answer": "I need more information to help you effectively. Could you please provide:1. The specific feature or object affected (dashboard, connection, schedule, etc.)2. Any error codes or messages you're seeing3. What you were trying to do when the issue occurred4. Your workspace role (Owner, Admin, Analyst, or Viewer)",
+      "sources": [],
+      "confidence": 0.85,
+      "requires_human": false,
+      "reason": "Classified as clarification. Verification passed."
+    }
+  }
+]
